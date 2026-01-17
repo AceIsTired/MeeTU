@@ -1,106 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Spreadsheet Viewer</title>
-    <style>
-        body { font-family: Arial; padding: 20px; }
-        table { border-collapse: collapse; margin-top: 20px; }
-        td, th { border: 1px solid #ccc; padding: 8px; text-align: left; }
-        th { background: #f0f0f0; }
-        .error { color: red; margin: 10px 0; }
-        .success { color: green; margin: 10px 0; }
-    </style>
-</head>
 <body>
-    <h1>Spreadsheet Cells</h1>
-    
-    <div>
-        <label>Sheet: <input id="sheet" value="Sheet1"></label>
-        <label>Range: <input id="range" value="A1:Z100"></label>
-        <button onclick="loadData()">Load Data</button>
-    </div>
-    
-    <div id="message"></div>
-    <div id="data"></div>
-
-    <script type="module">
-        const BACKEND_URL = 'https://script.google.com/macros/s/AKfycbzzc4-_WhxD6fAKILoA-MsETeSViDjPDiOosTse5_LqDtXJkyC1g7BNDfauVCHr80rC/exec';
-        
-        async function loadData() {
-            const sheet = document.getElementById('sheet').value;
-            const range = document.getElementById('range').value;
-            
-            document.getElementById('message').innerHTML = 'Loading...';
-            document.getElementById('data').innerHTML = '';
-            
-            try {
-                const url = `${BACKEND_URL}?action=get_data&sheet=${encodeURIComponent(sheet)}&range=${encodeURIComponent(range)}&_=${Date.now()}`;
-                const response = await fetch(url);
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
-                }
-                
-                const result = await response.json();
-                
-                if (result.status === 'success') {
-                    document.getElementById('message').innerHTML = 
-                        `<div class="success">Loaded ${result.dimensions.rows} rows × ${result.dimensions.columns} columns from ${result.sheet}</div>`;
-                    
-                    displayTable(result.data);
-                } else {
-                    throw new Error(result.message);
-                }
-                
-            } catch (error) {
-                document.getElementById('message').innerHTML = 
-                    `<div class="error">Error: ${error.message}</div>`;
-            }
-        }
-        
-        function displayTable(data) {
-            if (!data || data.length === 0) {
-                document.getElementById('data').innerHTML = 'No data';
-                return;
-            }
-            
-            let html = '<table>';
-            
-            // Add header with column letters
-            html += '<tr><th>#</th>';
-            const colCount = data[0] ? data[0].length : 0;
-            for (let i = 0; i < colCount; i++) {
-                const colLetter = String.fromCharCode(65 + (i % 26)) + (i >= 26 ? Math.floor(i / 26) : '');
-                html += `<th>${colLetter}</th>`;
-            }
-            html += '</tr>';
-            
-            // Add rows
-            data.forEach((row, rowIndex) => {
-                html += `<tr><td><b>${rowIndex + 1}</b></td>`;
-                
-                row.forEach(cell => {
-                    const cellText = cell === '[empty]' || cell === '' ? ' ' : cell;
-                    html += `<td>${cellText}</td>`;
-                });
-                
-                // Fill empty cells if row is shorter
-                for (let i = row.length; i < colCount; i++) {
-                    html += '<td> </td>';
-                }
-                
-                html += '</tr>';
-            });
-            
-            html += '</table>';
-            document.getElementById('data').innerHTML = html;
-        }
-        
-        // Load data on page load
-        window.addEventListener('DOMContentLoaded', loadData);
-    </script>
+  <h1>Spreadsheet Viewer</h1>
+  <iframe 
+      src="YOUR_URL/exec?sheet=Sheet1&range=A1:D20"
+      width="100%" 
+      height="600"
+      style="border:none;">
+    </iframe>
 </body>
 </html>
-
-
-
