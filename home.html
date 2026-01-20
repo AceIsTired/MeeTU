@@ -1,0 +1,318 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | MeeT U</title>
+    
+    <!-- Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=erode@400&f[]=tanker@400&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Shapes -->
+    <div class="organic-shape w-800 h-800 bg-pink-light top-0 left--60 animate-float"></div>
+    <div class="organic-shape w-700 h-700 bg-green-light bottom-0 right--60 animate-float-slow"></div>
+    <div class="organic-shape w-600 h-600 bg-pink-mid top-1/4 right-1/3 animate-float-slower"></div>
+
+    <!-- Floating Hearts -->
+    <div class="floating-heart heart-small top-20 left-10 animate-bounce-gentle"></div>
+    <div class="floating-heart heart-medium top-40 right-20 animate-float"></div>
+    <div class="floating-heart heart-large bottom-40 left-1/4 animate-spin-slow"></div>
+    <div class="floating-heart heart-medium bottom-20 right-1/3 animate-pulse-gentle"></div>
+
+    <!-- Additional Background Shapes -->
+    <div class="background-circle circle-md bg-pink-light top-1/5 left-1/5 animate-float-slower"></div>
+    <div class="background-circle circle-sm bg-green-light top-3/5 right-1/5 animate-float"></div>
+    <div class="background-circle circle-lg bg-pink-mid bottom-1/4 left-1/3 animate-float-slow"></div>
+    <div class="floating-heart heart-xs bg-pink-light top-1/3 left-2/5 animate-bounce-gentle"></div>
+    <div class="floating-heart heart-xl bg-green-light bottom-1/3 right-2/5 animate-spin-slow"></div>
+    <div class="background-circle circle-xs bg-pink-light top-2/5 right-3/5 animate-pulse-gentle"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="main-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <a href="home.html" class="logo">
+                    MeeT <span>U</span>
+                </a>
+                
+                <!-- Navigation Links -->
+                <div class="nav-links">
+                    <a href="home.html" class="navigation-link">
+                        Home
+                        <div class="nav-heart">
+                            <div class="heart-icon"></div>
+                        </div>
+                    </a>
+                    <a href="about.html" class="navigation-link">
+                        About
+                        <div class="nav-heart">
+                            <div class="heart-icon"></div>
+                        </div>
+                    </a>
+                    <a href="gallery.html" class="navigation-link">
+                        Gallery
+                        <div class="nav-heart">
+                            <div class="heart-icon"></div>
+                        </div>
+                    </a>
+                    <div class="nav-dropdown">
+                        <a href="dance.html" class="navigation-link">
+                            Dance
+                            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                            <div class="nav-heart">
+                                <div class="heart-icon"></div>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="weekly-classes.html">Weekly Classes</a>
+                            <a href="cover-groups.html">Cover Groups</a>
+                        </div>
+                    </div>
+                    <a href="events.html" class="navigation-link">
+                        Events
+                        <div class="nav-heart">
+                            <div class="heart-icon"></div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Theme Toggle - Simplified icons -->
+                <div class="theme-selector">
+                    <button onclick="setTheme('default')" class="theme-toggle-btn" title="Green Theme">
+                        <div class="theme-indicator" style="background: #082e09;"></div>
+                    </button>
+                    <button onclick="setTheme('pink')" class="theme-toggle-btn" title="Pink Theme">
+                        <div class="theme-indicator" style="background: #350910;"></div>
+                    </button>
+                    <button onclick="setTheme('light-green')" class="theme-toggle-btn" title="Light Theme">
+                        <div class="theme-indicator" style="background: #a1cba3; border-color: #6c323b;"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="main-container">
+                <div class="content-card hero-card">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="hero-line-1">Where Rhythm</span>
+                            <span class="hero-line-2">Meets Soul</span>
+                        </h1>
+                        <p class="hero-description">
+                            A vibrant community of dancers celebrating movement, creativity, and connection through weekly classes and dynamic cover groups.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="cover-groups.html" class="btn-primary">
+                                Join a Cover Group
+                            </a>
+                            <a href="weekly-classes.html" class="btn-secondary">
+                                View Classes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Floating hearts in hero -->
+                <div class="floating-heart hero-heart-1 animate-float"></div>
+                <div class="floating-heart hero-heart-2 animate-float-slow"></div>
+                <div class="floating-heart hero-heart-3 animate-float-slower"></div>
+            </div>
+        </section>
+
+        <!-- About Preview -->
+        <section class="section-padding">
+            <div class="main-container">
+                <div class="about-preview">
+                    <div class="about-image">
+                        <div class="content-card image-card">
+                            <div class="video-placeholder">
+                                <div class="video-icon animate-spin-slow">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 10v4a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <p class="video-text">Dance in Motion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <div class="content-card">
+                            <h2 class="section-title">
+                                <span class="text-accent">Our</span>
+                                <span class="text-secondary"> Community</span>
+                            </h2>
+                            <p class="section-text">
+                                We are more than just a dance group. We're a collective of passionate individuals who believe in the power of movement to express, connect, and transform.
+                            </p>
+                            <p class="section-text">
+                                From beginner workshops to advanced cover groups, we create spaces where every dancer can find their rhythm and voice.
+                            </p>
+                            <a href="about.html" class="cta-link">
+                                Discover Our Story
+                                <svg class="cta-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Cards -->
+        <section class="section-padding bg-section">
+            <div class="main-container">
+                <div class="content-card text-center section-header">
+                    <h2 class="section-title">
+                        <span class="text-secondary">What</span>
+                        <span class="text-accent"> We Offer</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        A diverse range of dance experiences for every level and interest
+                    </p>
+                </div>
+                
+                <div class="feature-grid">
+                    <!-- Card 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon animate-pulse-gentle">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Weekly Classes</h3>
+                        <p class="feature-description">
+                            Regular sessions for all skill levels. Learn foundational techniques or master advanced moves in a supportive environment.
+                        </p>
+                        <a href="weekly-classes.html" class="feature-link">
+                            View Schedule
+                            <svg class="feature-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon animate-heartbeat">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title text-secondary">Cover Groups</h3>
+                        <p class="feature-description">
+                            Join dedicated teams learning and performing dance covers. Multiple groups based on song choice and difficulty level.
+                        </p>
+                        <a href="cover-groups.html" class="feature-link accent">
+                            Explore Groups
+                            <svg class="feature-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon animate-bounce-gentle">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Events & Showcases</h3>
+                        <p class="feature-description">
+                            Regular performances, social dances, and community events. Show your skills and connect with fellow dance enthusiasts.
+                        </p>
+                        <a href="events.html" class="feature-link">
+                            Upcoming Events
+                            <svg class="feature-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section-padding">
+            <div class="main-container">
+                <div class="content-card cta-card">
+                    <div class="cta-glow glow-1 animate-pulse-gentle"></div>
+                    <div class="cta-glow glow-2 animate-pulse-gentle"></div>
+                    
+                    <div class="cta-content">
+                        <h2 class="cta-title">
+                            <span class="text-accent">Ready to</span>
+                            <span class="text-secondary"> Dance?</span>
+                        </h2>
+                        <p class="cta-description">
+                            Join our community today. No experience needed, just passion and willingness to move.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="cover-groups.html" class="btn-primary">
+                                Get Started Now
+                            </a>
+                            <a href="gallery.html" class="btn-secondary">
+                                View Gallery
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="main-container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        MeeT <span>U</span>
+                    </div>
+                    <p>
+                        A community where dance meets passion, creativity, and connection.
+                    </p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <p class="footer-copyright">
+                &copy; 2024 MeeT U. All movements preserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

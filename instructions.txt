@@ -1,0 +1,35 @@
+The services/things I have:
+- A custom domain
+- A "dance index" spreadsheet that will hold the following information on the cover groups for the semester
+	- Cover group leader name
+	- Group Song Name
+	- Total number of group members
+	- Dance difficulty rating (Easy, Intermediate, Hard)
+	- Current members names
+
+- A Box account to hold pictures in
+- A github repository to host the pages
+
+The page structure I want:
+- About Us
+- Home
+- Gallery
+- Dance
+  - Weekly Classes
+  - Cover Groups
+- Events
+
+
+Sites to get code/design reference from:
+- https://www.lars-olson.com//?ref=prettyfolio
+- https://www.marco.fyi//?ref=prettyfolio
+- https://mooeyandfriends.com
+- https://cinni.net
+
+
+Instructions:
+In the cover groups page, I want there to be a section that lists all the documented dance groups based on
+each row in a Google Spreadsheet
+
+In the gallery, I want it to display sections of photos that will be pulled from an online drive (like Box or 1TB)
+	

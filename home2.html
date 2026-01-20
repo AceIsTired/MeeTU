@@ -1,0 +1,324 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | MeeT U</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'green-light': '#a1cba3',
+                        'green-mid': '#386739',
+                        'green-dark': '#082e09',
+                        'pink-light': '#f9bbc4',
+                        'pink-mid': '#6c323b',
+                        'pink-dark': '#350910',
+                        'cream': '#f4e8de',
+                        'dark': '#1e1612',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-green-dark text-cream min-h-screen relative">
+    <!-- Organic background shapes -->
+    <div class="organic-shape w-[600px] h-[600px] bg-green-light top-0 -left-40 animate-float"></div>
+    <div class="organic-shape w-[500px] h-[500px] bg-pink-mid bottom-0 -right-40 animate-float-slow"></div>
+    <div class="organic-shape w-[400px] h-[400px] bg-pink-light top-1/3 right-1/4 animate-pulse-gentle"></div>
+    
+    <!-- Navigation -->
+    <nav class="relative z-40 glass-effect border-b border-green-mid/30">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <a href="home.html" class="text-2xl font-display font-bold text-cream mb-4 md:mb-0">
+                    <span class="text-green-light">MeeT</span>
+                    <span class="text-pink-light">U</span>
+                </a>
+                <div class="flex flex-wrap justify-center gap-8 md:gap-12">
+                    <a href="home.html" class="navigation-link text-lg hover:text-green-light transition-colors">Home</a>
+                    <a href="about.html" class="navigation-link text-lg hover:text-green-light transition-colors">About</a>
+                    <a href="gallery.html" class="navigation-link text-lg hover:text-green-light transition-colors">Gallery</a>
+                    <div class="relative group">
+                        <a href="dance.html" class="navigation-link text-lg hover:text-green-light transition-colors flex items-center gap-2">
+                            Dance
+                            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-48 bg-green-dark/90 backdrop-blur-lg border border-green-mid rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <a href="weekly-classes.html" class="block px-4 py-3 hover:bg-green-mid/50 transition-colors">Weekly Classes</a>
+                            <a href="cover-groups.html" class="block px-4 py-3 hover:bg-green-mid/50 transition-colors">Cover Groups</a>
+                        </div>
+                    </div>
+                    <a href="events.html" class="navigation-link text-lg hover:text-green-light transition-colors">Events</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="relative z-30">
+        <!-- Hero Section -->
+        <section class="relative py-24 md:py-32 overflow-hidden">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-5xl md:text-7xl font-display font-bold mb-8 leading-tight">
+                        <span class="block text-green-light">Where Rhythm</span>
+                        <span class="block text-pink-light mt-2">Meets Soul</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-cream/90 mb-12 max-w-2xl mx-auto leading-relaxed">
+                        A vibrant community of dancers celebrating movement, creativity, and connection through weekly classes and dynamic cover groups.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <a href="cover-groups.html" class="px-8 py-4 bg-pink-mid hover:bg-pink-dark text-cream rounded-full font-semibold text-lg transition-all duration-300 hover-lift hover:scale-105 transform">
+                            Join a Cover Group
+                        </a>
+                        <a href="weekly-classes.html" class="px-8 py-4 glass-effect border border-green-light/30 text-green-light rounded-full font-semibold text-lg transition-all duration-300 hover-lift hover:scale-105 transform">
+                            View Classes
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Floating elements -->
+            <div class="absolute top-1/4 left-10 w-32 h-32 rounded-full bg-pink-dark/20 border border-pink-mid/30 animate-float"></div>
+            <div class="absolute bottom-1/4 right-10 w-24 h-24 rounded-full bg-green-light/10 border border-green-light/30 animate-float-slow"></div>
+        </section>
+
+        <!-- About Preview -->
+        <section class="relative py-24">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2">
+                        <div class="relative">
+                            <div class="w-full h-96 rounded-3xl overflow-hidden border-2 border-green-mid/50 shadow-2xl">
+                                <!-- Placeholder for dance image -->
+                                <div class="w-full h-full bg-gradient-to-br from-green-mid/20 to-pink-mid/20 flex items-center justify-center">
+                                    <div class="text-center">
+                                        <div class="w-32 h-32 rounded-full bg-green-light/30 border-4 border-pink-light/30 mx-auto mb-6 flex items-center justify-center">
+                                            <svg class="w-16 h-16 text-pink-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 10v4a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                            </svg>
+                                        </div>
+                                        <p class="text-green-light text-lg">Dance in Motion</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-pink-dark/30 rounded-full -z-10 blur-xl"></div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h2 class="text-4xl font-display font-bold mb-8">
+                            <span class="text-green-light">Our</span>
+                            <span class="text-pink-light"> Community</span>
+                        </h2>
+                        <p class="text-lg text-cream/90 mb-6 leading-relaxed">
+                            We are more than just a dance group. We're a collective of passionate individuals who believe in the power of movement to express, connect, and transform.
+                        </p>
+                        <p class="text-lg text-cream/90 mb-8 leading-relaxed">
+                            From beginner workshops to advanced cover groups, we create spaces where every dancer can find their rhythm and voice.
+                        </p>
+                        <a href="about.html" class="inline-flex items-center text-green-light font-semibold text-lg group">
+                            Discover Our Story
+                            <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Cards -->
+        <section class="relative py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-display font-bold mb-6">
+                        <span class="text-pink-light">What</span>
+                        <span class="text-green-light"> We Offer</span>
+                    </h2>
+                    <p class="text-xl text-cream/80 max-w-2xl mx-auto">
+                        A diverse range of dance experiences for every level and interest
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="glass-effect rounded-2xl p-8 hover-lift border border-green-mid/20">
+                        <div class="w-16 h-16 rounded-full bg-pink-dark/30 flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-pink-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-green-light">Weekly Classes</h3>
+                        <p class="text-cream/80 mb-6">
+                            Regular sessions for all skill levels. Learn foundational techniques or master advanced moves in a supportive environment.
+                        </p>
+                        <a href="weekly-classes.html" class="text-pink-light font-semibold inline-flex items-center group">
+                            View Schedule
+                            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="glass-effect rounded-2xl p-8 hover-lift border border-green-mid/20">
+                        <div class="w-16 h-16 rounded-full bg-green-dark/30 flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-green-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-pink-light">Cover Groups</h3>
+                        <p class="text-cream/80 mb-6">
+                            Join dedicated teams learning and performing dance covers. Multiple groups based on song choice and difficulty level.
+                        </p>
+                        <a href="cover-groups.html" class="text-green-light font-semibold inline-flex items-center group">
+                            Explore Groups
+                            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="glass-effect rounded-2xl p-8 hover-lift border border-green-mid/20">
+                        <div class="w-16 h-16 rounded-full bg-pink-dark/30 flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-pink-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-green-light">Events & Showcases</h3>
+                        <p class="text-cream/80 mb-6">
+                            Regular performances, social dances, and community events. Show your skills and connect with fellow dance enthusiasts.
+                        </p>
+                        <a href="events.html" class="text-pink-light font-semibold inline-flex items-center group">
+                            Upcoming Events
+                            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="relative py-24">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center glass-effect rounded-3xl p-12 border border-pink-mid/30 relative overflow-hidden">
+                    <div class="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-green-light/10 blur-3xl"></div>
+                    <div class="absolute -bottom-20 -left-20 w-60 h-60 rounded-full bg-pink-mid/10 blur-3xl"></div>
+                    
+                    <h2 class="text-4xl md:text-5xl font-display font-bold mb-8 relative z-10">
+                        <span class="text-green-light">Ready to</span>
+                        <span class="text-pink-light"> Dance?</span>
+                    </h2>
+                    <p class="text-xl text-cream/90 mb-10 max-w-2xl mx-auto relative z-10">
+                        Join our community today. No experience needed, just passion and willingness to move.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center relative z-10">
+                        <a href="cover-groups.html" class="px-10 py-4 bg-gradient-to-r from-green-mid to-green-dark hover:from-green-dark hover:to-green-mid text-cream rounded-full font-bold text-lg transition-all duration-300 hover-lift transform hover:scale-105">
+                            Get Started Now
+                        </a>
+                        <a href="gallery.html" class="px-10 py-4 border-2 border-pink-light/50 hover:border-pink-light text-pink-light rounded-full font-bold text-lg transition-all duration-300 hover-lift transform hover:scale-105">
+                            View Gallery
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-40 border-t border-green-mid/30 mt-24 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-display font-bold mb-4">
+                        <span class="text-green-light">MeeT</span>
+                        <span class="text-pink-light">U</span>
+                    </div>
+                    <p class="text-green-light/80 max-w-md">
+                        A community where dance meets passion, creativity, and connection.
+                    </p>
+                </div>
+                <div class="flex gap-6">
+                    <a href="#" class="w-12 h-12 rounded-full glass-effect flex items-center justify-center hover-lift">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="w-6 h-6 text-pink-light" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="w-12 h-12 rounded-full glass-effect flex items-center justify-center hover-lift">
+                        <span class="sr-only">YouTube</span>
+                        <svg class="w-6 h-6 text-pink-light" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="w-12 h-12 rounded-full glass-effect flex items-center justify-center hover-lift">
+                        <span class="sr-only">Email</span>
+                        <svg class="w-6 h-6 text-pink-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="section-divider my-8"></div>
+            <p class="text-center text-green-light/60">
+                &copy; 2024 MeeT U. All movements preserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple page transition
+        document.querySelectorAll('a[href]').forEach(link => {
+            if (link.href && !link.href.startsWith('#')) {
+                link.addEventListener('click', (e) => {
+                    if (link.href !== window.location.href) {
+                        e.preventDefault();
+                        document.body.style.opacity = '0';
+                        setTimeout(() => {
+                            window.location.href = link.href;
+                        }, 300);
+                    }
+                });
+            }
+        });
+
+        // Fade in on load
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // Parallax effect for shapes
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const shapes = document.querySelectorAll('.organic-shape');
+            shapes.forEach((shape, index) => {
+                const speed = 0.2 + (index * 0.1);
+                const yPos = -(scrolled * speed);
+                shape.style.transform = `translateY(${yPos}px) translateX(${shape.style.left})`;
+            });
+        });
+    </script>
+</body>
+</html>
